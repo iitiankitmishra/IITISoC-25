@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shear Force & Bending Moment Diagram</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Beam Load Calculator</h2>
+        <input type="number" id="beamLength" placeholder="Enter beam length">
+        <input type="number" id="force1" placeholder="Enter force magnitude">
+        <input type="number" id="position1" placeholder="Enter force position">
+        <button onclick="generateDiagram()">Generate Diagram</button>
+
+        <h3>Shear Force Diagram</h3>
+        <canvas id="sfdChart"></canvas>
+        
+        <h3>Bending Moment Diagram</h3>
+        <canvas id="bmdChart"></canvas>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
